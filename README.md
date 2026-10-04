@@ -14,6 +14,18 @@ Le pack contient l'application, un guide rapide et les notices de licence.
 
 ![Aperçu du tableau de bord avec des données fictives](apercu.png)
 
+## Développement et sécurité
+
+Optimiseur PC est un projet indépendant publié par **orbite-zero**, développé avec l'aide de **Claude Code, l'outil de développement d'Anthropic**. Ce projet n'est ni édité ni certifié par Anthropic.
+
+**Analyse du 4 octobre 2026 : Microsoft Defender n'a détecté aucune menace** dans `OptimiseurPC.exe` et `OptimiseurPC-1.0.0.zip` téléchargés depuis cette page. [Consulter le compte rendu et les empreintes des fichiers analysés](ANALYSE-ANTIVIRUS.md).
+
+Ce résultat concerne ces fichiers à cette date. Il ne constitue pas une certification ni une garantie d'absence de toute menace, et ne remplace pas les tests des fonctions de l'application.
+
+La version 1.0.0 est une **bêta non signée numériquement**. Windows SmartScreen peut afficher un avertissement de réputation pour une application récente ou peu connue. Cet avertissement ne signifie pas, à lui seul, qu'un virus a été détecté. [En savoir plus auprès de Microsoft](https://learn.microsoft.com/fr-fr/windows/apps/package-and-deploy/smartscreen-reputation).
+
+Télécharge l'application uniquement depuis les liens de cette page et garde les protections de Windows activées. Si ton antivirus signale une menace, n'exécute pas le fichier et [signale la détection](https://github.com/orbite-zero/optimiseur-pc-telechargements/issues), en masquant toute donnée personnelle dans les captures.
+
 ## Utilisation
 
 1. Télécharge le pack ZIP et extrais son contenu.
@@ -21,8 +33,6 @@ Le pack contient l'application, un guide rapide et les notices de licence.
 3. Crée le point de restauration proposé avant la première modification.
 
 **Configuration prévue :** Windows 11 64 bits avec .NET Framework 4.8. Windows 10 n'a pas été testé.
-
-L'application est en bêta et n'est pas signée numériquement. Windows peut donc afficher un avertissement. Vérifie la provenance du fichier avant de l'exécuter.
 
 Pour découvrir l'interface sans modifier le PC, ouvre PowerShell dans le dossier de l'application et lance :
 
@@ -35,6 +45,8 @@ Pour découvrir l'interface sans modifier le PC, ouvre PowerShell dans le dossie
 ## Vérifier le téléchargement
 
 Les empreintes SHA-256 du pack et de l'exécutable figurent dans [SHA256SUMS.txt](SHA256SUMS.txt).
+
+Une empreinte permet de vérifier que le fichier correspond à celui publié ; elle ne constitue pas une analyse antivirus.
 
 ```powershell
 Get-FileHash .\OptimiseurPC.exe -Algorithm SHA256
