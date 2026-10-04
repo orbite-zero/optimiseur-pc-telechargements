@@ -2,22 +2,27 @@
 
 Une application Windows pour centraliser le nettoyage, le stockage, les applications, les programmes au démarrage et les réglages de performances.
 
-**Version actuelle : 1.1.0 bêta.**
+**Version actuelle : 1.2.0 bêta.**
 
 ## Télécharger
 
-**[Télécharger Optimiseur PC 1.1.0 — pack ZIP](https://github.com/orbite-zero/optimiseur-pc-telechargements/releases/download/v1.1.0/OptimiseurPC-1.1.0.zip)**
+**[Télécharger Optimiseur PC 1.2.0 — pack ZIP](https://github.com/orbite-zero/optimiseur-pc-telechargements/releases/download/v1.2.0/OptimiseurPC-1.2.0.zip)**
 
 Le pack contient l'application, un guide rapide et les notices de licence.
 
-[Fichier EXE seul](https://github.com/orbite-zero/optimiseur-pc-telechargements/releases/download/v1.1.0/OptimiseurPC.exe) · [Notes de version et licences](https://github.com/orbite-zero/optimiseur-pc-telechargements/releases/tag/v1.1.0) · [Signaler un problème](https://github.com/orbite-zero/optimiseur-pc-telechargements/issues)
+[Fichier EXE seul](https://github.com/orbite-zero/optimiseur-pc-telechargements/releases/download/v1.2.0/OptimiseurPC.exe) · [Notes de version et licences](https://github.com/orbite-zero/optimiseur-pc-telechargements/releases/tag/v1.2.0) · [Signaler un problème](https://github.com/orbite-zero/optimiseur-pc-telechargements/issues)
 
 ![Aperçu du tableau de bord avec des données fictives](apercu.png)
 
-## Nouveautés de la version 1.1.0
+## Nouveautés de la version 1.2.0
 
-- **Voir les fichiers** permet de consulter les fichiers concernés avant chaque nettoyage. Une confirmation séparée est demandée ; **Annuler** ne touche à rien.
-- Les fichiers nettoyés sont mis de côté pendant **7 jours** et peuvent être restaurés avec **Maintenance > Tout annuler**.
+- **Orbi, ton conseiller** : une petite planète dans la barre latérale donne des conseils et répond à tes questions à partir des informations du PC, sans connexion à Internet.
+- **Souris et bulles d'aide** : Orbi suit la souris dans la fenêtre et explique les onglets, boutons et réglages au survol. Un clic sur une bulle la lit à voix haute.
+- **Voix facultative** : Orbi parle uniquement sur demande. La voix naturelle **Siwis (78 Mo)** peut être téléchargée une fois dans les réglages, puis fonctionne hors ligne.
+- **Surveillance en direct** : Orbi signale discrètement une mémoire ou un processeur saturés.
+- **Personnalisation** : **Mes boutons** ajoute tes raccourcis favoris au tableau de bord ; le thème **Espace profond** propose un fond animé avec une lune en orbite et des étoiles filantes.
+
+**Réglages d'Orbi** permet de désactiver la voix, les animations, le suivi de la souris, les bulles, le fond animé, les rappels et la surveillance. **Tout remettre comme au début** efface ces choix.
 
 ## Développement et sécurité
 
@@ -25,9 +30,9 @@ Optimiseur PC est un projet indépendant publié par **orbite-zero**, développ�
 
 **Analyse historique de la version 1.0.0, du 4 octobre 2026 : Microsoft Defender n'a détecté aucune menace** dans les fichiers `OptimiseurPC.exe` et `OptimiseurPC-1.0.0.zip` de cette ancienne version. [Consulter le compte rendu et les empreintes des fichiers analysés](ANALYSE-ANTIVIRUS.md).
 
-Ce résultat concerne uniquement les fichiers de la version 1.0.0 à cette date et **ne s'applique pas à la version 1.1.0**. Aucune nouvelle analyse antivirus de la version 1.1.0 n'a été effectuée dans le cadre de cette publication. Ce résultat historique ne constitue pas une certification ni une garantie d'absence de toute menace, et ne remplace pas les tests des fonctions de l'application.
+Ce résultat concerne uniquement les fichiers de la version 1.0.0 à cette date et **ne s'applique pas aux versions 1.1.0 et 1.2.0**. Aucune nouvelle analyse antivirus de la version 1.2.0 n'a été effectuée dans le cadre de cette publication. Ce résultat historique ne constitue pas une certification ni une garantie d'absence de toute menace, et ne remplace pas les tests des fonctions de l'application.
 
-La version 1.1.0 est une **bêta non signée numériquement**, testée sur peu de PC. Windows SmartScreen peut afficher un avertissement de réputation pour une application récente ou peu connue. Cet avertissement ne signifie pas, à lui seul, qu'un virus a été détecté. [En savoir plus auprès de Microsoft](https://learn.microsoft.com/fr-fr/windows/apps/package-and-deploy/smartscreen-reputation).
+La version 1.2.0 est une **bêta non signée numériquement**, testée sur peu de PC. Windows SmartScreen peut afficher un avertissement de réputation pour une application récente ou peu connue. Cet avertissement ne signifie pas, à lui seul, qu'un virus a été détecté. [En savoir plus auprès de Microsoft](https://learn.microsoft.com/fr-fr/windows/apps/package-and-deploy/smartscreen-reputation).
 
 Télécharge l'application uniquement depuis les liens de cette page et garde les protections de Windows activées. Si ton antivirus signale une menace, n'exécute pas le fichier et [signale la détection](https://github.com/orbite-zero/optimiseur-pc-telechargements/issues), en masquant toute donnée personnelle dans les captures.
 
@@ -45,6 +50,8 @@ Pour découvrir l'interface sans modifier le PC, ouvre PowerShell dans le dossie
 .\OptimiseurPC.exe --demo
 ```
 
+**Voir les fichiers** permet de consulter les fichiers concernés avant chaque nettoyage. Une confirmation séparée est demandée ; **Annuler** ne touche à rien.
+
 **Maintenance > Tout annuler** restaure les réglages sauvegardés et, pendant 7 jours, les fichiers nettoyés mis de côté. **Libérer l'espace maintenant** supprime définitivement ces fichiers et rend leur restauration impossible avec ce bouton. Le vidage de la corbeille, le nettoyage des composants Windows et les désinstallations ne sont pas annulés par ce bouton.
 
 ## Vérifier le téléchargement
@@ -57,6 +64,6 @@ Une empreinte permet de vérifier que le fichier correspond à celui publié ; e
 Get-FileHash .\OptimiseurPC.exe -Algorithm SHA256
 ```
 
-## Licence de la version 1.1.0
+## Licence de la version 1.2.0
 
-La version 1.1.0 est distribuée sous [licence MIT](LICENSE). La version 1.0.0 conserve également sa licence MIT. La police Orbitron intégrée est fournie sous [licence SIL Open Font License 1.1](Orbitron-OFL.txt). Les deux notices sont incluses dans le pack ZIP et proposées avec la version téléchargeable.
+La version 1.2.0 est distribuée sous [licence MIT](LICENSE). Les versions 1.0.0 et 1.1.0 conservent également leur licence MIT. La police Orbitron intégrée est fournie sous [licence SIL Open Font License 1.1](Orbitron-OFL.txt). Les deux notices sont incluses dans le pack ZIP et proposées avec la version téléchargeable.
